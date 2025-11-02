@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gemini Exporter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Gemini Exporter</h1>
+      <p class="subtitle">Export to Markdown</p>
+    </div>
+    
+    <div class="content">
+      <button id="exportBtn" class="export-button">
+        <span class="button-icon">📥</span>
+        <span class="button-text">Export Chat</span>
+      </button>
+      
+      <div id="status" class="status hidden"></div>
+      
+      <div id="info" class="info">
+        <p>Click to export current Gemini conversation to Markdown</p>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <small>100% local processing • No data sent</small>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
