@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Gemini Chat Exporter",
+  "version": "1.0.0",
+  "description": "Export Gemini AI conversations to Markdown format with one click. Local processing only.",
+  "permissions": [
+    "activeTab",
+    "downloads"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://gemini.google.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.svg",
+      "48": "icon48.svg",
+      "128": "icon128.svg"
+    }
+  },
+  "icons": {
+    "16": "icon16.svg",
+    "48": "icon48.svg",
+    "128": "icon128.svg"
+  }
+}
